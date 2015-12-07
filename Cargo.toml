@@ -1,0 +1,6 @@
+[package]
+name = "csci440-final-project"
+version = "0.1.0"
+authors = ["Eric <eric.dattore@gmail.com>"]
+
+[dependencies]
