@@ -16,7 +16,10 @@ impl TVShow {
 }
 
 fn main() {
-    let file_name = env::args().nth(1).unwrap();
+    let file_name = match env::args().nth(1) {
+        Some(file_name) => file_name,
+        None => panic!("You need to pass in a commandline argument!"),
+    };
 
     let mut shows = read_file_input(&file_name);
 
